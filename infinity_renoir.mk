@@ -23,13 +23,6 @@ TARGET_SUPPORTS_BLUR := true
 BYPASS_CHARGE_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
 
-PRODUCT_SYSTEM_PROPERTIES += \
-ro.product.marketname=Mi 11 Lite 5G \
-ro.infinity.soc=Snapdragon 780G \
-ro.infinity.battery=4250 mAh \
-ro.infinity.display=1080 x 2400, 90 Hz \
-ro.infinity.camera=64MP + 8MP + 5MP
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := renoir
 PRODUCT_MANUFACTURER := Xiaomi
