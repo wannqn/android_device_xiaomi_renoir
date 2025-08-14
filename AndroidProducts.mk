@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/infinity_renoir.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_renoir-user \
-    infinity_renoir-userdebug \
-    infinity_renoir-eng
+    infinity_renoir-bp2a-eng \
+    infinity_renoir-bp2a-userdebug \
+    infinity_renoir-bp2a-user
