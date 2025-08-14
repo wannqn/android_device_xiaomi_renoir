@@ -8,13 +8,25 @@
 $(call inherit-product, device/xiaomi/renoir/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Boot Animaton
+TARGET_BOOT_ANIMATION_RES := 1080
+
+WITH_GAPPS := true
+INFINITY_MAINTAINER := wannq
+INFINITY_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_BLUR := true
+BYPASS_CHARGE_SUPPORTED := true
+TARGET_DISABLE_EPPE := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := renoir
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2101K9G
-PRODUCT_NAME := lineage_renoir
+PRODUCT_NAME := infinity_renoir
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="renoir_global-user 13 TKQ1.220829.002 V14.0.7.0.TKIMIXM release-keys" \
