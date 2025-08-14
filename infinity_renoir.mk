@@ -7,7 +7,7 @@
 # Inherit from renoir device
 $(call inherit-product, device/xiaomi/renoir/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Infinity stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Boot Animaton
