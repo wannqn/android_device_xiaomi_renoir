@@ -19,6 +19,10 @@ PRODUCT_COPY_FILES += \
 # Camera (MIUI)
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.miui.notch=1 \
+    ro.product.mod_device=renoir_global
+
 # Display
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,qdcm_calib_data_*.xml,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc/)
